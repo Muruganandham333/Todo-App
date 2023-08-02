@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <div className="todo-container">
@@ -57,23 +56,8 @@ function App() {
           </div>
         </div>
       </div>
-      <Modal />
     </div>
   );
-  function handleCreateTodo() {
-    console.log("Add Todo Clicked");
-    setOpen(true);
-  }
-
-  function Modal() {
-    return (
-      <div>
-        <Modal open={open}>
-          <h3>Add Todo Form</h3>
-        </Modal>
-      </div>
-    );
-  }
 }
 
 export default App;
