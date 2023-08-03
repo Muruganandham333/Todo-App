@@ -69,3 +69,9 @@ input[type="checkbox"] {
   padding: 10px 15px;
   font-size: medium;
 }
+
+@media only screen and (min-width: 400px) and (max-width: 980px) {
+  .todo-container {
+    width: 90%;
+  }
+}
